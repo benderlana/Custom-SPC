@@ -44,6 +44,25 @@ sap.ui.define([
             this.AjaxCallerData(link, this.SUCCESSValueTiles.bind(this));
         },
         SUCCESSValueTiles: function (Jdata) {
+            if (this.getView().byId("container").getContent()) {
+                switch (this.getView().byId("container").getContent().length) {
+                    case 0:
+                        this.getView().byId("container").setWidth("0px");
+                        break;
+                    case 1:
+                        this.getView().byId("container").setWidth("300px");
+                        break;
+                    case 2:
+                        this.getView().byId("container").setWidth("575px");
+                        break;
+                    case 3:
+                        this.getView().byId("container").setWidth("850px");
+                        break;
+                    default:
+                        this.getView().byId("container").setWidth("1100px");
+                        break;
+                }
+            }
             if (this.getView().byId("container").getContent().length === Jdata.length) {
                 for (var i in Jdata) {
                     if (Jdata[i].alarm === "1") {
@@ -57,26 +76,11 @@ sap.ui.define([
                 }
             }
             this.ModelTiles.setData(Jdata);
-//            for (var i in obj) {
-//                if (isNaN(obj[i])) {
-//                    obj[i] = "SMPL";
-//                }
-//            }
-//            for (var j in Jdata) {
-//                if (Jdata[j].alarm === "1") {
-//                    this.getView().byId(String(Number(j) + 1) + "NC").setState("Loaded");
-//                } else {
-//                    this.getView().byId(String(Number(j) + 1) + "NC").setState("Disabled");
-//                }
-//            }
-//            this.ValuesTiles.setData(obj);
             this.getView().setModel(this.ModelTiles, "ValuesTiles");
             this.RefreshFunction();
         },
         //      RICHIAMATO DAL PULSANTONE VERDE A FIANCO DELLA PROGRESS BAR
         SPCGraph: function (event) {
-//            var StringIndex = event.getParameter("id")[event.getParameter("id").length - 1];
-//            this.index = Number(StringIndex) - 1;
             var StringIndex = event.getSource().getId().split("-");
             this.index = Number(StringIndex[StringIndex.length - 1]);
             this.ID = this.ModelTiles.getData()[this.index].ID;

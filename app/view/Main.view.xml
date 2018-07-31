@@ -11,7 +11,7 @@
             </VBox>
             <VBox height="55%" width="100%">
                 <FlexBox alignItems="Start" justifyContent="Center">
-                    <ScrollContainer id="container" height="600px" width="1100px" vertical="true" horizontal="false" content="{path:'ValuesTiles>/'}">
+                    <ScrollContainer id="container" height="300px" width="1100px" vertical="true" horizontal="false" content="{path:'ValuesTiles>/'}">
                         <GenericTile header="{ValuesTiles>description}" press="SPCGraph" class="margine tileContentWidth tileSize bordoBlu tileTitle tileBlue tileTitleHoverBlue">
                             <tileContent>
                                 <TileContent class="absoluteTileContentPosition footerStyle" footer="{ValuesTiles>unit}">
@@ -23,37 +23,6 @@
                         </GenericTile>
                     </ScrollContainer>
                 </FlexBox>
-                <!--                <FlexBox alignItems="Start" justifyContent="Center">
-                    <GenericTile id="1" header="Spaghetti 500 grams" press="SPCGraph" class="tileContentWidth tileSize bordoBlu tileTitle tileBlue tileTitleHoverBlue">
-                        <tileContent>
-                            <TileContent class="absoluteTileContentPosition footerStyle" footer="Grams (gr)">
-                                <content>
-                                    <NumericContent id="1NC" nullifyValue="SMPL" width="100%" value="{ValuesTiles>/value1}" truncateValueTo="6" class="iconWhite" icon="sap-icon://meal" />
-                                     </content>
-                            </TileContent>
-                        </tileContent>
-                    </GenericTile>
-                    <HBox width="3%"/>
-                    <GenericTile id="2" header="Spaghetti 1000 grams" press="SPCGraph" class="tileContentWidth tileSize bordoRosso tileTitle tileRed tileTitleHoverRed">
-                        <tileContent>
-                            <TileContent class="absoluteTileContentPosition footerStyle" footer="Grams (gr)">
-                                <content>
-                                    <NumericContent id="2NC" nullifyValue="SMPL" width="100%" value="{ValuesTiles>/value2}" truncateValueTo="7" class="iconWhite" icon="sap-icon://meal" />
-                                </content>
-                            </TileContent>
-                        </tileContent>
-                    </GenericTile>
-                    <HBox width="3%"/>
-                    <GenericTile id="3" header="Olive Oil 1lt Bottle" press="SPCGraph" class="tileContentWidth tileSize bordoVerde tileTitle tileGreen tileTitleHoverGreen">
-                        <tileContent>
-                            <TileContent class="absoluteTileContentPosition footerStyle" footer="Grams (gr)">
-                                <content>
-                                    <NumericContent id="3NC" nullifyValue="SMPL" width="100%" value="{ValuesTiles>/value3}" truncateValueTo="7" class="iconWhite" icon="sap-icon://meal"/>
-                                </content>
-                            </TileContent>
-                        </tileContent>
-                    </GenericTile>
-                </FlexBox>-->
             </VBox>
             <VBox height="10%" width="100%"/>
         </content>
