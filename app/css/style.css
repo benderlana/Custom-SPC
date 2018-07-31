@@ -1,0 +1,129 @@
+/* Custom Styles  */
+.colorPage
+{
+    background: white;
+}
+.bckgPage
+{
+    background-image: url('../img/techedge.png');
+    background-size:cover;
+}
+.customTextTitle {
+    font-size: 60pt;
+    color : #004785;
+}
+.tileSize {
+    width: 250px !important;
+    height: 250px !important;
+}
+.absoluteTileContentPosition {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
+}
+.Logo {
+    width: 55%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.tileTitle .sapMGTHdrContent {
+    margin: 0px; 
+}
+.tileTitleHoverBlue .sapMGTHdrContent .sapMGTHdrTxt{
+    background-color: white !important;
+}
+.tileTitleHoverBlue .sapMTextLineClamp{
+    color: #004785 !important; 
+}
+.tileTitleHoverRed .sapMTextLineClamp{
+    color: #A71930 !important; 
+}
+.tileTitleHoverRed .sapMGTHdrContent .sapMGTHdrTxt{
+    background-color: white !important; 
+}
+.tileTitleHoverGreen .sapMTextLineClamp{
+    color: #008000 !important; 
+}
+.tileTitleHoverGreen .sapMGTHdrContent .sapMGTHdrTxt{
+    background-color: white !important; 
+}
+.tileTitle .sapMTextLineClamp {
+    text-align: center; 
+    font-size: 20pt;
+    font-family: Arial;
+    line-height: 17pt;
+    white-space: normal;
+    margin: 1rem;
+    color: white;
+    height: 38pt;
+}
+.iconWhite .sapUiIcon {
+    color: white;
+    font-size: 45px; 
+}
+.tileBlue {
+    background-color: #004785;
+}
+.tileRed {
+    background-color: #A71930;
+}
+.tileGreen {
+    background-color: #008000;
+}
+.bordoRosso {
+    border: solid 1.5px #A71930;
+}
+.bordoBlu {
+    border: solid 1.5px #004785;
+}
+.bordoVerde {
+    border: solid 1.5px #008000;
+}
+.chiudiButton .sapMBtnInner {
+    font-family: Arial;
+    font-size: 20pt;
+    background: #f2f2f2;
+    color: #004785;
+    border-radius: 10px;
+    padding: 2.5%;
+    height: 100%;
+}
+.allarmeButton .sapMBtnInner {
+    font-family: Arial;
+    font-size: 20pt;
+    background: #FFD300;
+    color: #004785;
+    border-radius: 10px;
+    padding: 2.5%;
+    height: 100%;
+}
+.contentButton .sapMBtnContent {
+    line-height: 1.8rem;
+}
+.textTop {
+    font-size: 30pt;
+    color : #004785;
+}
+.sapMBtn {
+    height: 3.7rem;
+}
+.tileContentWidth .sapMTileCnt{
+    width: 100%;
+}
+.sapMNCValue.Disabled {
+    color: white;
+}
+.sapMNCValue.Neutral {
+    color: white;
+}
+.sapMNCValue.Loaded {
+    color: #FFD300;
+}
+.footerStyle .sapMTileCntFtrTxt {
+    color: white;
+    font-size: 15pt;
+    height: 1.3rem;
+}
+.margine {
+    margin-right: 1rem;
+}

@@ -1,0 +1,46 @@
+<core:FragmentDefinition
+    controllerName="myapp.controller.Main"
+    id="SPCWindow"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:t="sap.ui.table">
+    <Dialog contentWidth="1600px" contentHeight="1200px" id="SPCWindow" showHeader="false" class="colorPage">
+        <VBox height="100%" width="100%">
+            <VBox height="2%" width="100%" class="colorPage"/>
+            <VBox height="8%" width="100%" class="colorPage">
+                <HBox>
+                    <VBox height="100%" width="100%">
+                        <FlexBox alignItems="Start" justifyContent="Center">
+                            <Text id="headerSPCWindow" text="" class="textTop"/>
+                        </FlexBox>
+                    </VBox>
+                </HBox>
+            </VBox>
+            <VBox height="8%" width="100%" class="colorPage">
+                <HBox>
+                    <VBox height="100%" width="100%">
+                        <FlexBox alignItems="Start" justifyContent="Center">
+                            <Text id="samplingSPC" text="" class="textTop"/>
+                        </FlexBox>
+                    </VBox>
+                </HBox>
+            </VBox>
+            <VBox id="plotBox" height="550px" width="100%" class="colorPage"/>
+            <VBox height="3%" width="100%" class="colorPage"/>
+            <VBox height="7%" width="100%" class="colorPage">
+                <HBox>
+                    <VBox height="100%" width="10%"/>
+                    <VBox height="100%" width="30%">
+                        <Button text="Close" width="100%" press="CloseSPCDialog" class="chiudiButton contentButton"/>
+                    </VBox>
+                    <VBox height="100%" width="20%"/>
+                    <VBox height="100%" width="30%">
+                        <Button id="alarmButton" text="Reset" width="100%" enabled="false" press="RemoveAlarm" class="chiudiButton contentButton"/>
+                    </VBox>
+                    <VBox height="100%" width="10%"/>
+                </HBox>
+            </VBox>
+        </VBox>
+    </Dialog>
+</core:FragmentDefinition>  
