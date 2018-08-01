@@ -116,6 +116,8 @@ sap.ui.define([
             setTimeout(this.SPCDataCaller.bind(this), this.MsecRefresh);
         },
         SPCDialogFiller: function (discr) {
+            this.Alarm = this.ModelTiles.getData()[this.index].alarm;
+            this.Sampling = this.ModelTiles.getData()[this.index].sampleProgress;
             var textHeader = this.getView().byId("headerSPCWindow");
             textHeader.setText(String(this.ModelTiles.getData()[this.index].description));
             var samplingHeader = this.getView().byId("samplingSPC");

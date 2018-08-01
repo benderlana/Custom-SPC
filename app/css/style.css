@@ -27,25 +27,40 @@
     margin-top: 5%;
 }
 .tileTitle .sapMGTHdrContent {
-    margin: 0px; 
+    margin: 0rem;
+    padding: 1rem;
+    background: white;
+    height: 40pt;
+}
+.tileTitle .sapMGTHdrContent .sapMText{
+    text-align: center !important; 
+    font-size: 20pt;
+    font-family: Arial;
+    line-height: 18pt;
+    white-space: normal;    
+}
+.iconWhite .sapMNCValueScr {
+    height: 4rem;
+}
+.iconWhite .sapUiIcon {
+    color: white;
+    font-size: 48px; 
+}
+.iconWhite .sapMImageContent {
+    height: 5rem;
+    bottom: 1.5rem;
+}
+.tileBlue {
+    background-color: #003A6B;
+}
+.tileBlue .sapMGTHdrContent .sapMText {
+    color: #003A6B;
 }
 .tileTitleHoverBlue .sapMGTHdrContent .sapMGTHdrTxt{
     background-color: white !important;
 }
 .tileTitleHoverBlue .sapMTextLineClamp{
     color: #004785 !important; 
-}
-.tileTitleHoverRed .sapMTextLineClamp{
-    color: #A71930 !important; 
-}
-.tileTitleHoverRed .sapMGTHdrContent .sapMGTHdrTxt{
-    background-color: white !important; 
-}
-.tileTitleHoverGreen .sapMTextLineClamp{
-    color: #008000 !important; 
-}
-.tileTitleHoverGreen .sapMGTHdrContent .sapMGTHdrTxt{
-    background-color: white !important; 
 }
 .tileTitle .sapMTextLineClamp {
     text-align: center; 
@@ -57,27 +72,8 @@
     color: white;
     height: 38pt;
 }
-.iconWhite .sapUiIcon {
-    color: white;
-    font-size: 45px; 
-}
-.tileBlue {
-    background-color: #004785;
-}
-.tileRed {
-    background-color: #A71930;
-}
-.tileGreen {
-    background-color: #008000;
-}
-.bordoRosso {
-    border: solid 1.5px #A71930;
-}
 .bordoBlu {
     border: solid 1.5px #004785;
-}
-.bordoVerde {
-    border: solid 1.5px #008000;
 }
 .chiudiButton .sapMBtnInner {
     font-family: Arial;
